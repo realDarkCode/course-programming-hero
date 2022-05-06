@@ -1,0 +1,107 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+section {
+  height: 500px;
+}
+.half-area {
+  width: 40%;
+  float: left;
+}
+.highlight {
+  color: #eb4c79;
+}
+h3 {
+  font-size: 35px;
+}
+h2 {
+  font-size: 45px;
+}
+img {
+  width: 70%;
+}
+.intro-area {
+  padding-top: 70px;
+  background-image: url(./images/header-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.intro-area .half-area:first-child {
+  padding-left: 10%;
+}
+.intro-area .half-area:last-child {
+  padding-right: 10%;
+}
+.intro-area h3 {
+  font-weight: 300;
+}
+.intro-area h2 {
+  font-weight: 700;
+}
+.link-btn {
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  background: #eb4c79;
+  text-decoration: none;
+}
+.dream-area {
+  background-image: url(./images/biography-bg.png);
+}
+.dream-area .half-area:first-child {
+  padding-left: 10%;
+}
+.dream-area .half-area:last-child {
+  margin-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+}
+
+.latest-works {
+  background-image: url(./images/latest-work-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.latest-works .work-images img {
+  width: 25%;
+  margin-left: 5%;
+}
+
+.bottom-area {
+  background-image: url(./images/footer-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.review {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+.review h5 {
+  color: gray;
+}
+.review p {
+  font-size: 16px;
+  width: 600px;
+  text-align: center;
+  margin: 0 auto;
+}
+.contact {
+  color: white;
+  background-color: #eb4c75;
+  text-align: center;
+  padding: 30px 0;
+  width: 70%;
+  margin: 30px auto;
+  border-radius: 10px;
+}
+footer {
+  text-align: center;
+  color: gray;
+  padding: 30px 0;
+}
