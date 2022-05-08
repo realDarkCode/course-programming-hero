@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/index.css" />
     <title>Vanilla Javascript Calculator</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
@@ -16,7 +15,7 @@
       <div class="button">
         <button id="clear" class="clear" data-type="clear">AC</button>
         <button id="backspace" data-type="backspace">⌫</button>
-        <button id="percent" data-type="percent">%</button>
+        <button id="modulo" data-type="operator" data-key="modulo">%</button>
         <button id="divide" class="operator" data-type="operator" data-key="divide">÷</button>
         <button id="seven" data-type="number">7</button>
         <button id="eight" data-type="number">8</button>
@@ -25,7 +24,7 @@
         <button id="four" data-type="number">4</button>
         <button id="five" data-type="number">5</button>
         <button id="six" data-type="number">6</button>
-        <button id="subtract" class="operator" data-type="operator" data-key="substract">-</button>
+        <button id="subtract" class="operator" data-type="operator" data-key="subtract">-</button>
         <button id="one" data-type="number">1</button>
         <button id="two" data-type="number">2</button>
         <button id="three" data-type="number">3</button>
@@ -37,6 +36,6 @@
       </div>
     </div>
     <!-- Design taken from: https://github.com/kailoon/javascript-calculator -->
-    <script src="index.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
