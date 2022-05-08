@@ -60,9 +60,9 @@
                 </div>
 
                 <div class="col-md-4 status">
-                  <h5>$1,278</h5>
+                  <h5>$<span id="sub-total-label">1,278</span></h5>
                   <h5>$0</h5>
-                  <h5>$1,278</h5>
+                  <h5>$<span id="total-label">1,278</span></h5>
                 </div>
               </div>
             </div>
@@ -84,7 +84,6 @@
         const plusBtn = item.getElementsByTagName("button")[1];
         const quantity = item.getElementsByTagName("input")[0];
         const updateFor = item.id;
-        console.dir(item);
         minusBtn.addEventListener("click", function () {
           if (quantity.value > 0) {
             updateQuantity(quantity, -1);
@@ -94,6 +93,7 @@
             } else if (updateFor == "phone-case") {
               updatePhoneCase(false);
             }
+            updateTotalPrice();
           }
         });
         plusBtn.addEventListener("click", function () {
@@ -104,9 +104,16 @@
           } else if (updateFor == "phone-case") {
             updatePhoneCase(true);
           }
+          updateTotalPrice();
         });
       }
-      
+      // update Total price list
+      function updateTotalPrice() {
+        const phonePrice = +document.getElementById("phone-price").innerText;
+        const phoneCasePrice = +document.getElementById("phone-case-price").innerText;
+        document.getElementById("total-label").innerText = phonePrice + phoneCasePrice;
+        document.getElementById("sub-total-label").innerText = phonePrice + phoneCasePrice;
+      }
       function updatePhone(isIncrement) {
         const priceLabel = document.getElementById("phone-price");
         if (isIncrement) {
