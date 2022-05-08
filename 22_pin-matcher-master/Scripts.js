@@ -59,7 +59,7 @@ submitButton.addEventListener("click", function () {
 });
 
 function reset() {
-  submitButton.setAttribute("disabled", false);
+  submitButton.removeAttribute("disabled");
   tryCount.innerText = 3;
   successNotification.style.display = "none";
   errorNotification.style.display = "none";
